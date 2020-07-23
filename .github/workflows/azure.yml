@@ -39,7 +39,7 @@ jobs:
         npm run test --if-present
     - name: Report Build Succeeded
       if: ${{ success() }}
-      uses: cto-ai/action@v1-beta
+      uses: cto-ai/action@t1
       id: ctoai-build-succeeded
       with:
         team_id: ${{ secrets.CTOAI_TEAM_ID }}
@@ -50,7 +50,7 @@ jobs:
         pipeline_id: "your-pipeline-id1"
     - name: Report Build Failed
       if: ${{ failure() }}
-      uses: cto-ai/action@v1-beta
+      uses: cto-ai/action@t1
       id: ctoai-build-failed
       with:
         team_id: ${{ secrets.CTOAI_TEAM_ID }}
@@ -67,7 +67,7 @@ jobs:
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
     - name: Report Deployment Succeeded
       if: ${{ success() }}
-      uses: cto-ai/action@v1-beta
+      uses: cto-ai/action@t1
       id: ctoai-deployment-succeeded
       with:
         team_id: ${{ secrets.CTOAI_TEAM_ID }}
@@ -78,7 +78,7 @@ jobs:
         pipeline_id: "your-pipeline-id1"
     - name: Report Deployment Failed
       if: ${{ failure() }}
-      uses: cto-ai/action@v1-beta
+      uses: cto-ai/action@t1
       id: ctoai-deployment-failed
       with:
         team_id: ${{ secrets.CTOAI_TEAM_ID }}
