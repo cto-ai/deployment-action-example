@@ -1,0 +1,19 @@
+{
+  "name": "deployment-action-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Tests go here\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cto-ai/deployment-action-example.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/cto-ai/deployment-action-example/issues"
+  },
+  "homepage": "https://github.com/cto-ai/deployment-action-example#readme"
+}
