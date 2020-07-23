@@ -46,8 +46,8 @@ jobs:
         token: ${{ secrets.CTOAI_EVENTS_API_TOKEN }}
         stage: "Build"
         status: "Succeeded"
-        change-id: "your-change-id1"
-        pipeline-id: "your-pipeline-id1"
+        change_id: "your-change-id1"
+        pipeline_id: "your-pipeline-id1"
     - name: Report Build Failed
       if: ${{ failure() }}
       uses: cto-ai/action@v1-beta
@@ -57,8 +57,8 @@ jobs:
         token: ${{ secrets.CTOAI_EVENTS_API_TOKEN }}
         stage: "Build"
         status: "Failed"
-        change-id: "your-change-id1"
-        pipeline-id: "your-pipeline-id1"
+        change_id: "your-change-id1"
+        pipeline_id: "your-pipeline-id1"
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
@@ -74,8 +74,8 @@ jobs:
         token: ${{ secrets.CTOAI_EVENTS_API_TOKEN }}
         stage: "Deployment"
         status: "Succeeded"
-        change-id: "your-change-id1"
-        pipeline-id: "your-pipeline-id1"
+        change_id: "your-change-id1"
+        pipeline_id: "your-pipeline-id1"
     - name: Report Deployment Failed
       if: ${{ failure() }}
       uses: cto-ai/action@v1-beta
@@ -85,5 +85,5 @@ jobs:
         token: ${{ secrets.CTOAI_EVENTS_API_TOKEN }}
         stage: "Deployment"
         status: "Failed"
-        change-id: "your-change-id1"
-        pipeline-id: "your-pipeline-id1"
+        change_id: "your-change-id1"
+        pipeline_id: "your-pipeline-id1"
